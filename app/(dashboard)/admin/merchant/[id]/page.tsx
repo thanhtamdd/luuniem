@@ -189,7 +189,7 @@ const handleInputChange = (
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300"
                 required
               />
             </div>
@@ -200,7 +200,7 @@ const handleInputChange = (
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300"
               />
             </div>
             <div>
@@ -210,7 +210,7 @@ const handleInputChange = (
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300"
               />
             </div>
             <div>
@@ -219,7 +219,7 @@ const handleInputChange = (
                 name="status"
                 value={formData.status}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300"
               >
                 <option value="ACTIVE">Active</option>
                 <option value="INACTIVE">Inactive</option>
@@ -232,7 +232,7 @@ const handleInputChange = (
                 name="address"
                 value={formData.address}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300"
               />
             </div>
             <div className="md:col-span-2">
@@ -241,13 +241,13 @@ const handleInputChange = (
                 name="description"
                 value={formData.description}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300 h-32"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300 h-32"
               ></textarea>
             </div>
             <div className="md:col-span-2">
               <button 
                 type="submit"
-                className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition"
+                className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-pink-600 transition"
               >
                 Save Changes
               </button>
@@ -276,7 +276,7 @@ const handleInputChange = (
                     <td className="py-4">
                       <Link
                         href={`/admin/products/${product.id}`}
-                        className="text-blue-500 hover:underline"
+                        className="text-pink-500 hover:underline"
                       >
                         View
                       </Link>

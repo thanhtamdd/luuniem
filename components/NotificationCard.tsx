@@ -48,7 +48,7 @@ const getTypeIcon = (type: NotificationType) => {
 const getTypeColor = (type: NotificationType) => {
   switch (type) {
     case NotificationType.ORDER_UPDATE:
-      return 'bg-blue-100 text-blue-800';
+      return 'bg-pink-100 text-pink-800';
     case NotificationType.PAYMENT_STATUS:
       return 'bg-green-100 text-green-800';
     case NotificationType.PROMOTION:

@@ -83,7 +83,7 @@ export default function NewMerchantPage() {
                 value={formData.name}
                 onChange={handleInputChange}
                 required
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300"
                 placeholder="Merchant name"
               />
             </div>
@@ -94,7 +94,7 @@ export default function NewMerchantPage() {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300"
                 placeholder="email@example.com"
               />
             </div>
@@ -105,7 +105,7 @@ export default function NewMerchantPage() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300"
                 placeholder="Phone number"
               />
             </div>
@@ -115,7 +115,7 @@ export default function NewMerchantPage() {
                 name="status"
                 value={formData.status}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300"
               >
                 <option value="ACTIVE">Active</option>
                 <option value="INACTIVE">Inactive</option>
@@ -128,7 +128,7 @@ export default function NewMerchantPage() {
                 name="address"
                 value={formData.address}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300"
                 placeholder="Merchant address"
               />
             </div>
@@ -138,7 +138,7 @@ export default function NewMerchantPage() {
                 name="description"
                 value={formData.description}
                 onChange={handleInputChange}
-                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-300 h-32"
+                className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-pink-300 h-32"
                 placeholder="Enter merchant description"
               ></textarea>
             </div>
@@ -146,7 +146,7 @@ export default function NewMerchantPage() {
               <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className={`bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition ${
+                className={`bg-pink-500 text-white px-6 py-2 rounded-md hover:bg-pink-600 transition ${
                   isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                 }`}
               >

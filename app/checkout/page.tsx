@@ -439,7 +439,7 @@ const CheckoutPage = () => {
                     autoComplete="given-name"
                     required
                     disabled={isSubmitting}
-                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                   />
                 </div>
               </div>
@@ -466,7 +466,7 @@ const CheckoutPage = () => {
                     autoComplete="family-name"
                     required
                     disabled={isSubmitting}
-                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                   />
                 </div>
               </div>
@@ -493,7 +493,7 @@ const CheckoutPage = () => {
                     autoComplete="tel"
                     required
                     disabled={isSubmitting}
-                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                   />
                 </div>
               </div>
@@ -520,7 +520,7 @@ const CheckoutPage = () => {
                     autoComplete="email"
                     required
                     disabled={isSubmitting}
-                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                   />
                 </div>
               </div>
@@ -528,18 +528,18 @@ const CheckoutPage = () => {
 
             {/* Payment Notice */}
             <section className="mt-10">
-              <div className="bg-blue-50 border border-blue-200 rounded-md p-4">
+              <div className="bg-pink-50 border border-pink-200 rounded-md p-4">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <svg className="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                    <svg className="h-5 w-5 text-pink-400" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <h3 className="text-sm font-medium text-blue-800">
+                    <h3 className="text-sm font-medium text-pink-800">
                       Payment Information
                     </h3>
-                    <div className="mt-2 text-sm text-blue-700">
+                    <div className="mt-2 text-sm text-pink-700">
                       <p>Payment will be processed after order confirmation. You will be contacted for payment details.</p>
                     </div>
                   </div>
@@ -571,7 +571,7 @@ const CheckoutPage = () => {
                       name="company"
                       required
                       disabled={isSubmitting}
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.company}
                       onChange={(e) =>
                         setCheckoutForm({
@@ -598,7 +598,7 @@ const CheckoutPage = () => {
                       autoComplete="street-address"
                       required
                       disabled={isSubmitting}
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.adress}
                       onChange={(e) =>
                         setCheckoutForm({
@@ -624,7 +624,7 @@ const CheckoutPage = () => {
                       name="apartment"
                       required
                       disabled={isSubmitting}
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.apartment}
                       onChange={(e) =>
                         setCheckoutForm({
@@ -651,7 +651,7 @@ const CheckoutPage = () => {
                       autoComplete="address-level2"
                       required
                       disabled={isSubmitting}
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.city}
                       onChange={(e) =>
                         setCheckoutForm({
@@ -678,7 +678,7 @@ const CheckoutPage = () => {
                       autoComplete="address-level1"
                       required
                       disabled={isSubmitting}
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.country}
                       onChange={(e) =>
                         setCheckoutForm({
@@ -705,7 +705,7 @@ const CheckoutPage = () => {
                       autoComplete="postal-code"
                       required
                       disabled={isSubmitting}
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.postalCode}
                       onChange={(e) =>
                         setCheckoutForm({
@@ -749,7 +749,7 @@ const CheckoutPage = () => {
                 type="button"
                 onClick={makePurchase}
                 disabled={isSubmitting}
-                className="w-full rounded-md border border-transparent bg-blue-500 px-20 py-2 text-lg font-medium text-white shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-gray-50 sm:order-last disabled:bg-gray-400 disabled:cursor-not-allowed"
+                className="w-full rounded-md border border-transparent bg-pink-500 px-20 py-2 text-lg font-medium text-white shadow-sm hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 focus:ring-offset-gray-50 sm:order-last disabled:bg-gray-400 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "Processing Order..." : "Place Order"}
               </button>
