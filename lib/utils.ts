@@ -1,62 +1,62 @@
 export const categoryMenuList = [
   {
     id: 1,
-    title: "Smart Phones",
-    src: "/smart phone icon.png",
+    title: "Household Appliances",
+    src: "/hanger.png",
     href: "/shop/smart-phones"
   },
   {
     id: 2,
-    title: "Tablets",
-    src: "/tablet icon.png",
+    title: "Cosmetics",
+    src: "/cosmetics.png",
     href: "/shop/tablets"
   },
   {
     id: 3,
-    title: "Mouses",
-    src: "/mouse icon.png",
+    title: "Personal gadgets",
+    src: "/smart watch.png",
     href: "/shop/mouses"
   },
   {
     id: 4,
-    title: "Cameras",
-    src: "/camera icon.png",
+    title: "Stationery",
+    src: "/stationery.png",
     href: "/shop/cameras"
   },
   {
     id: 5,
-    title: "Smart Watches",
-    src: "/smart watch.png",
+    title: "Souvenirs",
+    src: "/gift.png",
     href: "/shop/watches"
   },
   {
     id: 6,
-    title: "Laptops",
-    src: "/laptop icon.png",
+    title: "Tech accessories",
+    src: "/usb.png",
     href: "/shop/laptops"
   },
   {
     id: 7,
-    title: "PCs",
-    src: "/pc icon.png",
+    title: "Jewelry",
+    src: "/jewelry.png",
     href: "/shop/computers"
   },
   {
     id: 8,
-    title: "Printers",
-    src: "/printers icon.png",
+    title: "Seasonal Items",
+    src: "/Seasonal Items.png",
     href: "/shop/printers"
   },
   {
     id: 9,
-    title: "Earbuds",
-    src: "/ear buds icon.png",
+    title: "Fashion Accessories",
+    src: "/accessories.png",
     href: "/shop/earbuds"
   },
   {
     id: 10,
-    title: "Head Phones",
-    src: "/headphone icon.png",
+    title: "Food",
+    src: "/Food.png",
     href: "/shop/headphones"
   },
 ];
