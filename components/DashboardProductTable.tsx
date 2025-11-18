@@ -1,13 +1,3 @@
-// *********************
-// Role of the component: Product table component on admin dashboard page
-// Name of the component: DashboardProductTable.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <DashboardProductTable />
-// Input parameters: no input parameters
-// Output: products table
-// *********************
-
 "use client";
 import { nanoid } from "nanoid";
 import Image from "next/image";
@@ -21,13 +11,9 @@ const DashboardProductTable = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    apiClient.get("/api/products?mode=admin", {cache: "no-store"})
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setProducts(data);
-      });
+    apiClient.get("/api/products?mode=admin", { cache: "no-store" })
+      .then(res => res.json())
+      .then(data => setProducts(data));
   }, []);
 
   return (
@@ -46,16 +32,11 @@ const DashboardProductTable = () => {
         </Link>
       </div>
 
-      <div className="xl:ml-5 w-full max-xl:mt-5 overflow-auto w-full h-[80vh]">
+      <div className="xl:ml-5 w-full max-xl:mt-5 overflow-auto h-[80vh]">
         <table className="table table-md table-pin-cols">
-          {/* head */}
           <thead>
             <tr>
-              <th>
-                <label>
-                  <input type="checkbox" className="checkbox" />
-                </label>
-              </th>
+              <th><input type="checkbox" className="checkbox" /></th>
               <th>Product</th>
               <th>Stock Availability</th>
               <th>Price</th>
@@ -63,59 +44,44 @@ const DashboardProductTable = () => {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
-            {products &&
-              products.map((product) => (
-                <tr key={nanoid()}>
-                  <th>
-                    <label>
-                      <input type="checkbox" className="checkbox" />
-                    </label>
-                  </th>
-
-                  <td>
-                    <div className="flex items-center gap-3">
-                      <div className="avatar">
-                        <div className="mask mask-squircle w-12 h-12">
-                          <Image
-                            width={48}
-                            height={48}
-                            src={product?.mainImage ? `/${product?.mainImage}` : "/product_placeholder.jpg"}
-                            alt={sanitize(product?.title) || "Product image"}
-                            className="w-auto h-auto"
-                          />
-                        </div>
-                      </div>
-                      <div>
-                        <div className="font-bold">{sanitize(product?.title)}</div>
-                        <div className="text-sm opacity-50">
-                          {sanitize(product?.manufacturer)}
-                        </div>
+            {products.map(product => (
+              <tr key={nanoid()}>
+                <th><input type="checkbox" className="checkbox" /></th>
+                <td>
+                  <div className="flex items-center gap-3">
+                    <div className="avatar">
+                      <div className="mask mask-squircle w-12 h-12">
+                        <Image
+                          width={48}
+                          height={48}
+                          src={product.mainImage || "/product_placeholder.jpg"}
+                          alt={sanitize(product.title)}
+                          className="w-auto h-auto"
+                        />
                       </div>
                     </div>
-                  </td>
-
-                  <td>
-                    { product?.inStock ? (<span className="badge badge-success text-white badge-sm">
-                      In stock
-                    </span>) : (<span className="badge badge-error text-white badge-sm">
-                      Out of stock
-                    </span>) }
-                    
-                  </td>
-                  <td>${product?.price}</td>
-                  <th>
-                    <Link
-                      href={`/admin/products/${product.id}`}
-                      className="btn btn-ghost btn-xs"
-                    >
-                      details
-                    </Link>
-                  </th>
-                </tr>
-              ))}
+                    <div>
+                      <div className="font-bold">{sanitize(product.title)}</div>
+                      <div className="text-sm opacity-50">{sanitize(product.manufacturer)}</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  {product.inStock ? (
+                    <span className="badge badge-success text-white badge-sm">In stock</span>
+                  ) : (
+                    <span className="badge badge-error text-white badge-sm">Out of stock</span>
+                  )}
+                </td>
+                <td>${product.price}</td>
+                <th>
+                  <Link href={`/admin/products/${product.id}`} className="btn btn-ghost btn-xs">
+                    details
+                  </Link>
+                </th>
+              </tr>
+            ))}
           </tbody>
-          {/* foot */}
           <tfoot>
             <tr>
               <th></th>
